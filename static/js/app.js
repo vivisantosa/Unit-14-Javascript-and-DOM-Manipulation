@@ -30,3 +30,29 @@ data.forEach((user) => {
     });
 });
 console.log("Part 1 is done");
+
+// PART 2: Date Search
+// Codes that search through the date/time column to find rows that match user input.
+
+console.log("-- INPUT HANDLER --");
+// grab references to the input element 
+var text = d3.select("#datetime");
+
+// Function to reverse a string
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+
+// Function to handle input change
+function handleChange(event) {
+  // grab the value of the input field
+  var inputText = d3.event.target.value;
+  console.log(`A. inputText : ${inputText}`);
+  // reverse the input string
+  var reversedInput = reverseString(inputText);
+  console.log(reversedInput);
+}
+
+text.on("change", handleChange);
+
+console.log("Part 2 is done");
