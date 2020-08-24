@@ -6,14 +6,10 @@ Author: Vivianti Santosa <br>
 Date: 2020-08-25 <br>
 */
 
-// PART 1: Automatic Table
+// PART 1: TABLE WITH SEARCH ON DATE ONLY 
+// SECTION 1: Automatic Table
 // Codes that appends a table to the web page using dataset in JavaScript objects form
-function displayTable(tblData) {
-  tblData.forEach((entry) => {
-    var row = tbody.append("tr");
-    Object.entries(entry).forEach(([key, value]) => row.append("td").text(value))
-  });
-}
+
 
 // Get the data for the table from data.js
 var tableData = data;
@@ -30,14 +26,10 @@ data.forEach((user) => {
 });
 console.log("Part 1 is done");
 
-// PART 2: Date Search
+// SECTION 2: Data Filtering and other functions
 // Codes that search through the date/time column to find rows that match user input.
 
-console.log("-- INPUT HANDLER --");
-// grab references to the input element 
-var inputBox = d3.select("#datetime");
-var filterButton = d3.select("#filter-btn");
-var resetButton = d3.select("#reset-btn");
+
 
 // Function to reverse a string
 function reverseString(str) {
@@ -54,7 +46,15 @@ function handleChange(event) {
   console.log(reversedInput);
 }
 
-function resetTable(){
+function displayTable(tblData) {
+  var tbody = d3.select("tbody");
+  tblData.forEach((entry) => {
+    var row = tbody.append("tr");
+    Object.entries(entry).forEach(([key, value]) => row.append("td").text(value))
+  });
+}
+
+function clearTable(){
   //prevent page from refreshing
   d3.event.preventDefault();
   //remove data from rows so that filtered tabel can be rendered
@@ -73,23 +73,32 @@ function handleChange(event) {
   console.log(reversedInput);
 }
 
+// Section 3 : Connecting with buttons
+
+console.log("-- INPUT HANDLER --");
+// grab references to the input element 
+var inputBox = d3.select("#datetime");
+var filterButton = d3.select("#filter-btn");
+var resetButton = d3.select("#reset-btn");
+
 inputBox.on("change", handleChange);
 
 // Use D3 `.on` to attach a click handler for the upvote
 filterButton.on("click", function() {
-  // Select the current count
   console.log(`Filter Table buttom being clicked`);
+  console.log(`Filtered Table Displayed !!!`); 
 });
 
 resetButton.on("click", function() {
-  // Select the current count
   console.log(`Reset Table buttom being clicked`);
+  clearTable();
+  displayTable(data);
+  console.log(`Table Reseted !!!`); 
 });
 
 console.log("Part 2 is done");
 
-// PART 3
- //create variable for date input value
+// PART 4 
 var pickDate = "1/5/2010";
 
  //create variable for date input value
