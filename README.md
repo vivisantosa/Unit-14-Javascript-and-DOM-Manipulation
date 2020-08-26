@@ -40,7 +40,7 @@ The first task in this part is to update the HTML page with more input boxes for
 We then created code that would filter the base table and create the list of distinct items for each search criteria. The result is attached to the HTML select code. 
 The picture on the left below shows the updated website. <br>
 
-<img src="/Images/Multi1.png" width="48%">    <img src="/Images/Multi2.png" width="48%"><br>
+<img src="/Images/Multi1.png" width="49%">    <img  align="right" src="/Images/Multi2.png" width="49%"><br>
 <br>
 
 ### Multiple Keys Filter
