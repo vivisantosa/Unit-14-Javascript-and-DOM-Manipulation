@@ -32,14 +32,15 @@ In part 2, the search function is modified so that user can to set multiple filt
 - state
 - country
 - shape
-<br>To guide users in inserting the right input, we also create a select dropdowns menu with entry based on the dataset and updated when the base data-set is updated. <br>
+<br>
+To guide users in inserting the right input, we also create a select dropdowns menu with entry based on the dataset and updated when the base data-set is updated. <br>
 
 ### Dropdown menu
 The first task in this part is to update the HTML page with more input boxes for other filter keys and make them “select” capable. <br>
 We then created code that would filter the base table and create the list of distinct items for each search criteria. The result is attached to the HTML select code. 
 The picture on the left below shows the updated website. <br>
 
-<img src="/Images/Multi1.png" width="50%"><img src="/Images/Multi2.png" width="50%"><br>
+<img src="/Images/Multi1.png" width="48%">  <img src="/Images/Multi2.png" width="48%"><br>
 (Picture 3)                                                                          (Picture 4)<br><br>
 
 ### Multiple Keys Filter
