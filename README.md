@@ -14,14 +14,14 @@ The objective of this assignment is to use JavaScript, HTML, and CSS, and D3.js 
 The part 1 of this assignment is to create a basic HTML web page with a table containing  UFO sighting dataset that is filterable for date/time of the sighting.<br>
 
 The first task  is  creating codes that append the rows of table-body of the table  in  HTML  web page with the UFO dataset that come from aJavaScript object dataset. The separation of data file  and the HTML code file is constructed so that data should be able to be  updated easily in  the dataset file. Picture 1 below shows the website with basic table displayed <br>
-<img src="/Images/Single1.png" width="480">
+<img src="/Images/Single1.png" width="600">
 (Picture1)<br><br>
 The second task is to create a search function ( “filterSingleKey()”) in JavaScript that searches through the date/time column with an data type input from users,  finds rows that match user input, and returns a set of filtered data. As well as a “ displayTable(data);” function that cleans the table body and repopulates it with filtered data to display it in the HTML table. <br>
 The last task is to write JavaScript code that will listen for “events” - the clicking of a button and perform the corresponding operations.  Beside the input box, we have two buttons FILTER TABLE and RESET TABLE that will respond to user's action.  <br>
 FILTER TABLE : A “click” action will trigger the display function, which will prompt search function to generate filterSingleKey function to generate “filteredData” set that it subsequently display.<br>
 RESET DATA :  A “click” action will trigger the display function to display the table with input from the base tableData.<br>
 Picture 2 below shows the website with a search result <br>
-<img src="/Images/Single2.png" width="480"><br>
+<img src="/Images/Single2.png" width="600"><br>
 (Picture2)<br><br>
 
 ## Part 2 : Multiple Search Categories
@@ -38,8 +38,8 @@ The first task in this part is to update the HTML page with more input boxes for
 We then created code that would filter the base table and create the list of distinct items for each search criteria. The result is attached to the HTML select code. 
 The picture on the left below shows the updated website. <br>
 
-<img src="/Images/Multi1.png" width="48%">       
-<img src="/Images/Multi2.png" width="48%">
+<img src="/Images/Multi1.png" width="45%">       
+<img src="/Images/Multi2.png" width="45%">
 (Picture 3)                                                                          (Picture 4)<br>
 
 The next task is to create a multiple filtering function ( “filterMultiKey()”) that is able to search more than one scratch criteria. The challenge for this task comes from when one or more of the input box is empty - when users want to search with only one or two search keys - a situation that the filtering process will result in an empty list. To mitigate that we create a function to create a list of only the filterKeys that is not empty ( “getFilteKey()”) . We use this list to iterate and perform the filtering task to generate the “filteredData” for the FILTER TABLE button. The picture above shows the resulting filter table on three search keys.
