@@ -3,7 +3,7 @@ UFO SIGHTING
 
 # Unit 14 JavaScript and DOM Manipulation
 # Author: Vivianti Santosa
-# Date: 2020-08-25
+# Date: 2020-08-26
 --> 
 
 <!DOCTYPE html>
@@ -23,13 +23,16 @@ UFO SIGHTING
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">UFO Sightings
-            <img class="nav-ufo" src="static/images/ufo.svg">
-          </a>
+          <ul class="nav navbar-nav">
+            <li><a class="navbar-brand" href="index.html">UFO Sightings
+              <img class="nav-ufo" src="static/images/ufo.svg"></a></li>
+            <li style=" position: absolute; right: 0; font-size:medium"><a href="https://vivisantosa.github.io/">
+              <span style ="font-size:medium" class="glyphicon glyphicon-user"></span> MyPage</a></li>
+          </ul class="list-group list-group-horizontal">
         </div>
       </div>
     </nav>
-    <div class="hero text-center" style="height: 350px;">
+    <div style="height: 350px;" class="hero text-center">
       <h1 style="margin-top: 100px;">UFO Sightings</h1>
       <p>The Truth is Out There</p>
     </div>
@@ -43,10 +46,38 @@ UFO SIGHTING
                 <form>
                   <div class="form-group">
                     <ul class="list-group" id="filters">
+
                       <li class="filter list-group-item">
-                        <label for="date">Enter a Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <label for="date">Pick a Date</label>
+                        <select name="Date" id='datedrop'>
+                          <option class="default" value='default'> -- select an option -- </option>
+                        </select>
                       </li>
+                      <li class="filter list-group-item">
+                        <label for="city">Pick a city</label>
+                        <select name="City" id='citydrop'>
+                          <option class="default" value='default'> -- select an option -- </option>
+                        </select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="state">Enter a state</label>
+                        <select name="State" id='statedrop'>
+                          <option class="default" value='default'> -- select an option -- </option>
+                        </select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="country">Enter a country</label>
+                        <select name="Country" id='countrydrop'>
+                          <option class="default" value='default'> -- select an option -- </option>
+                        </select>
+                      </li>
+                      <li class="filter list-group-item">
+                        <label for="shape">Enter a shape</label>
+                        <select name="Shape" id='shapedrop'>
+                          <option class="default" value='default'> -- select an option -- </option>
+                        </select>
+                      </li>
+
                     </ul>
                   </div>
                   <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
@@ -83,6 +114,8 @@ UFO SIGHTING
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
   <script src="static/js/data.js"></script>
   <script src="static/js/app.js"></script>
+  
+
 </body>
 
 </html>
