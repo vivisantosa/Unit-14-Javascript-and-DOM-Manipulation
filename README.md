@@ -26,12 +26,12 @@ The picture below shows the website with a search result <br>
 <br>
 
 ## Part 2 : Multiple Search Categories
-In part 2, the search function is modified so that user can to set multiple filters and search for UFO sightings using the following criteria (based on the table columns):
-date/time
-city
-state
-country
-shape
+In part 2, the search function is modified so that user can to set multiple filters and search for UFO sightings using the following criteria (based on the table columns):<br>
+- date/time
+- city
+- state
+- country
+- shape
 To guide users in inserting the right input, we also create a select dropdowns menu with entry based on the dataset and updated when the base data-set is updated. <br>
 
 ###Dropdown menu
