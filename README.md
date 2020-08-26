@@ -40,8 +40,8 @@ The first task in this part is to update the HTML page with more input boxes for
 We then created code that would filter the base table and create the list of distinct items for each search criteria. The result is attached to the HTML select code. 
 The picture on the left below shows the updated website. <br>
 
-<img src="/Images/Multi1.png" width="48%">  <img src="/Images/Multi2.png" width="48%"><br>
-(Picture 3)                                                                          (Picture 4)<br><br>
+<img src="/Images/Multi1.png" width="48%">    <img src="/Images/Multi2.png" width="48%"><br>
+<br>
 
 ### Multiple Keys Filter
 The next task is to create a multiple filtering function ( “filterMultiKey()”) that is able to search more than one scratch criteria. The challenge for this task comes from when one or more of the input box is empty - when users want to search with only one or two search keys - a situation that the filtering process will result in an empty list. To mitigate that we create a function to create a list of only the filterKeys that is not empty ( “getFilteKey()”) . We use this list to iterate and perform the filtering task to generate the “filteredData” for the FILTER TABLE button. The picture above shows the resulting filter table on three search keys. <br>
