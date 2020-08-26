@@ -18,8 +18,8 @@ The first task  is  creating codes that append the rows of table-body of the tab
 <br>
 The second task is to create a search function ( “filterSingleKey()”) in JavaScript that searches through the date/time column with an data type input from users,  finds rows that match user input, and returns a set of filtered data. As well as a “ displayTable(data);” function that cleans the table body and repopulates it with filtered data to display it in the HTML table. <br>
 The last task is to write JavaScript code that will listen for “events” - the clicking of a button and perform the corresponding operations.  Beside the input box, we have two buttons FILTER TABLE and RESET TABLE that will respond to user's action.  <br>
-FILTER TABLE : A “click” action will trigger the display function, which will prompt search function to generate filterSingleKey function to generate “filteredData” set that it subsequently display.<br>
-RESET DATA :  A “click” action will trigger the display function to display the table with input from the base tableData.<br>
+- FILTER TABLE : A “click” action will trigger the display function, which will prompt search function to generate filterSingleKey function to generate “filteredData” set that it subsequently display.<br>
+- RESET DATA :  A “click” action will trigger the display function to display the table with input from the base tableData.<br>
 The picture below shows the website with a search result <br>
 <br>
 <img src="/Images/Single2.png" width="90%"><br>
